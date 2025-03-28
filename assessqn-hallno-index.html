@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Exam Seat Allotment</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        input, button { padding: 10px; margin: 5px; }
+        .result { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Student Login</h1>
+    <input type="text" id="registerNumber" placeholder="Register Number">
+    <input type="text" id="subjectCode" placeholder="Subject Code">
+    <button onclick="login()">Submit</button>
+
+    <div class="result" id="result"></div>
+
+    <h2>Check Seat Details</h2>
+    <input type="text" id="checkRegister" placeholder="Enter Register Number">
+    <button onclick="getSeat()">Get Seat</button>
+
+    <div class="result" id="seatResult"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

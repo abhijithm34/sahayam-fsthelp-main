@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Manager</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        input, textarea, button { margin: 5px; padding: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid black; padding: 10px; text-align: left; }
+        th { background-color: #ddd; }
+    </style>
+</head>
+<body>
+    <h1>Notes Manager</h1>
+
+    <input type="text" id="title" placeholder="Note Title">
+    <textarea id="content" placeholder="Note Content"></textarea>
+    <button onclick="addNote()">Add Note</button>
+
+    <h2>Search Notes</h2>
+    <input type="text" id="search" oninput="searchNotes()" placeholder="Search Notes">
+
+    <h2>All Notes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Content</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="notes-list"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
